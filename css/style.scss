@@ -1,0 +1,1275 @@
+@charset "utf-8";
+
+
+/* font-family: 'Nanum Pen Script', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
+
+/*font-family: 'Noto Sans KR', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+/* font-family: 'Gugi', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Gugi&display=swap');
+
+
+#wrap{
+    
+    font-family: 'Noto Sans KR';
+    width: 100%;
+    >header{
+        
+        width: 100%;
+        
+        // outline: 1px solid red;
+
+        >.mnu{
+            width: 100%;
+            border-bottom: 1px solid #dedede;
+            
+            >.topmnu{
+    
+                width: 1400px;
+                margin: 0 auto;
+                position: relative;
+                // outline: 1px solid red;
+    
+    
+                >.leftmnu{
+                    display: flex;
+    
+                    
+    
+                    >li{
+                        width: 100px;
+                        
+                        
+                        >a{
+                            display: block;
+                            height: 45px;
+                            color: #aaa;
+                            font-size: 14px;
+                            text-align: center;
+                            line-height: 45px;
+                            
+        
+                        }
+                    }
+                }
+    
+                >.rightmnu{
+                    position: absolute;
+                    right: 0;top: 0;
+                    display: flex;
+                    
+    
+                    >li{
+                        
+                        width: 80px;
+                        &:nth-of-type(4){width: 130px;}
+                        &:nth-of-type(5){width: 130px;}
+                        >a{
+                            display: block;
+                            height: 45px;
+                            font-size: 16px;
+                            text-align: center;
+                            line-height: 45px;
+                            color: #aaa;
+                            
+                            
+                        }
+                        >select{
+                            height: 45px;
+    
+                            
+                            
+                            
+                            
+                        }
+                    }
+    
+                }
+    
+            }
+        }
+
+        >.mnunav{
+            position: relative;
+            
+            width: 1400px;
+            height: 100px;
+            margin: 0 auto;
+            
+            >h1{
+                position: absolute;
+                left: 0;
+                top: 50%;
+                margin-top: -22px;
+                width: 169px;
+                // outline: 1px solid red;
+                
+                background-image: url(./../images/logo_header.png);
+                >a{
+                    display: block;
+                    height: 43px;
+                    text-indent: -9999px;
+                }
+            }
+
+            >nav{
+
+                >.gnb{
+                    position: absolute;
+                    left:180px;
+                    display: flex;
+                    width: 800px;
+                    >li{
+                        position: relative;
+                        width: 130px;
+                        >a{
+                            position: relative;
+                            display: block;
+                            font-size: 20px;
+                            font-weight: 600;
+                            height: 100px;
+                            line-height: 100px;
+                            text-align: center;
+
+                        }
+                        >a:after{
+                            display: block;
+                            display: none;
+                            position: absolute;
+                            left: 50%;
+                            bottom: 20px;
+                            margin-left: -3px;
+                            width: 0;
+                            height: 0;
+                            border-width: 6px;
+                            border-style: solid;
+                            border-color: transparent transparent #3160c2 transparent;
+                            content: '';
+                        }
+                        .lnb{
+                            position: absolute;
+                            top: 80px;
+                            left: -15px;
+                            display: none;
+                            border: 1px solid #3160c2;
+                            background-color: #fff;
+                            z-index: 1000;
+                            >li{
+                                position: relative;
+                                border-bottom: 1px solid #dedede;
+                               
+
+                                width: 150px;
+
+                                
+                                >a{
+                                    display: block;
+                                    height: 30px;
+                                    text-align: left;
+                                    line-height: 30px;
+                                    font-size: 16px;
+                                    margin: 10px;
+
+                                }
+                            }
+                            >li:hover{
+                                >a{
+                                    display: block;
+                                    color: red;
+                                    text-indent: 10px;
+                                    
+                                }
+                                >a:before{
+                                    position: absolute;
+                                    left: 10px;top: 11px;
+                                    width: 2px;
+                                    height: 2px;
+                                    content: '';
+                                    border-width: 3px;
+                                    border-style: solid;
+                                    border-color: transparent  transparent  transparent#3160c2;
+                                    
+                                    
+                        
+                                }
+                            }
+                        }
+                    }
+                    >li:hover{
+                        >a{
+                            color: #3160c2;
+
+                        }
+                        >a:after{
+                            display: block;                            
+                            
+
+                        }
+                    }
+                    
+                    
+                }
+                >.bar{
+                    position: absolute;
+                    right: 350px;
+                    top: 50%;
+                    margin-top: -8px;
+                    width: 22px;
+                    background-image: url(./../images/sp_ui.png);
+                    >a{
+                        display: block;
+                        text-indent: -9999px;
+                        height: 22px;
+                    }
+                }
+                >.search{
+                    position: absolute;
+                    right: 0;
+                    top: 26px;
+                    display: flex;
+
+                    >form{
+                        
+                        >input{
+                            width: 250px;
+                            
+                            height: 40px;
+                            
+                            border-radius: 20px;
+                            font-size: 16px;
+                            color: #fff;
+
+                            
+                            background-color: rgba(0, 0, 0, 0.658);
+                        }
+
+                    }
+                    >a{
+                        position: absolute;
+                        top: 10px;
+                        right: 0;
+                        display: block;
+                        width: 30px;
+                        height: 30px;
+                        
+                        background-image: url(./../images/sp_ui.png);
+                        background-position: -26px -0 ;
+                        text-indent: -9999px;
+
+
+                    }
+                }
+
+            }
+        }
+
+        
+
+
+    }
+    >section{
+        
+        
+        >.cont1{
+            
+            >.bg_main{
+                
+                position: relative;
+                width: 100%;
+                height: 849px;
+                background:#e1f4f5 url(./../images/bg_main01.jpg) no-repeat 100% 0/auto 100%;
+                
+                >.sns-slide{
+                    position: relative;
+                    width: 1400px;
+                    margin: 0 auto;
+                    >h2{
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        font-size: 30px;
+                        font-weight: 600;
+                        width: 150px;
+                        height: 130px;
+                        text-align: center;
+                        line-height: 130px;
+        
+                    }
+
+                    >.sns{
+                        display: flex;
+                        position: absolute;
+                        left: 730px;top: 55px;
+                        justify-content: space-between;
+                        width: 200px;
+                        >li{
+                            width: 40px;
+                            
+                            
+                            background-image: url(./../images/sp_main.png);
+
+                            &:nth-last-of-type(1){background-position: -360px -38px;}
+                            &:nth-last-of-type(2){background-position: -316px -38px;}
+                            &:nth-last-of-type(3){background-position: -272px -38px;}
+                            &:nth-last-of-type(4){background-position: -228px -86px;}
+                            >a{
+                                display: block;
+                                height: 46px;
+                                text-indent: -9999px;
+                            }
+                            
+                        }
+                        
+                    }
+                    >.slide{
+                        position: absolute;
+                        top: 130px;
+                        left: 0;
+                        width: 930px;
+                        height: 450px;
+                        
+                        
+                        overflow: hidden;
+                        >.slide-container{
+                            display: flex;
+                            position: absolute;
+                            left: 0;
+                            
+                            justify-content: space-between;
+                            width: 1240px;
+                            // height: 300px;
+                            
+                            
+                         
+                            >li{
+                                                                      
+                                border-radius: 10px;
+                                width: 300px;
+                                background-color: #fff;
+                                box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+                                >a{
+                                    display: block;
+                                    font-size: 16px;
+                                    >.pic{
+                                        display: block;                                       
+                                        
+                                        height: 215px;
+                                        >img{
+                                            display: block;
+                                            border-radius: 10px 10px 0 0;
+                                            width: 100%;
+                                            height: 100%;
+                                        }
+                                        
+                                    }
+                                    >.txt{
+                                        display: block;
+                                        height: 100px;
+                                        font-size: 18px;
+                                        color: #999;
+                                        padding: 10px;
+                                        line-height: 1.4;
+    
+                                        
+                                    }
+                                    >.date{
+                                        position: relative;
+                                        display: block;
+                                        height: 40px;
+                                        font-size: 14px;
+                                        color: #999;
+                                        padding: 10px;
+                                        line-height: 40px;
+                                        border-top: 1px solid #dedede;
+                                        
+    
+                                    }
+                                    >.date:after{
+                                        position: absolute;
+                                        content: '';
+                                        bottom: 25px;
+                                        right: 20px;
+                                        width: 14px;
+                                        height: 14px;
+                                        background-image: url(./../images/sp_main.png);
+                                        background-position: -324px 0;
+                                    }
+                                  
+                                }
+                            }
+            
+                        }
+
+
+
+                        
+                    }
+                    >.popup{
+                        position: absolute;
+                        right: 0;
+                        top: 90px;
+                       
+                        width: 400px;
+                        height: 384px;
+                        
+                        
+                        >p{
+                            width: 400px;
+                            >.time{
+                                display: block;
+                                height: 87px;
+                                font-size: 16px;
+                                color: #fff;
+                                line-height: 87px;
+                                text-align: center;
+        
+        
+                            }
+                            
+                        }
+                        >.frame{
+                            width: 400px;
+                            overflow: hidden;
+                            >a{
+                                display: block;
+                                height: 297px;
+                                text-indent: -9999px;
+                                border-radius: 10px;
+                                transition: all 1s;
+                                background-image: url(./../images/img_vdo.png);
+                                overflow: hidden;
+        
+                            }
+        
+                        }
+                        >.frame:hover{
+                            >a{
+                                transform: scale(1.2);
+                            }
+                        }
+                   
+                    }
+                    >.stroy{
+                        position: absolute;
+                        top: 520px;
+                        right: 0;
+                        width: 400px;
+                        height: 252px;
+                        color: #fff;
+                        margin: 0 auto;
+                        text-align: right;
+                        >h2{
+                            font-family: 'Nanum Pen Script';
+                            font-size: 50px;
+        
+                        }
+                        >p{
+                            font-size: 18px;
+                            margin-top: 30px;
+                            
+                            >span{
+                                color: orange;
+        
+        
+                            }
+        
+                        }
+                        >.last{
+                            margin-top: 100px;
+                        }
+                        >span{
+                            position: absolute;
+                            bottom: 30px;
+                            right: 0;
+                            display: block;
+                            width: 130px;
+                            padding: 3px;
+                            border: 1px solid #fff;
+                            >a{
+                                display: block;
+                                height: 30px;
+                                color: #fff;
+                                font-weight: 700;
+                                font-size: 16px;
+                                text-align: left;
+                                text-indent: 10px;
+                                line-height: 30px;
+                                
+                            }
+        
+                        }
+                        >span:after{
+                            content: '';
+                            position: absolute;
+                            top: 0;
+                            right: 15px;
+                            bottom: 0;
+                            width: 7px;
+                            height: 7px;
+                            margin: auto;
+                            border: 2px solid #fff;
+                            border-width: 0 2px 2px 0;
+                            transform: rotate(-45deg);
+                        }
+                        
+                    }
+                    >.info{
+                        position: absolute;
+                        top: 650px;
+                        left: 0;
+                        
+                        >.list-info{
+                            display: flex;
+                            justify-content: space-between;
+                            width: 1000px;
+                            height: 145px;
+                            >li{
+                                
+                                width: 102px;
+                                height: 100px;
+                                
+                                background-image: url(./../images/sp_main_ico01.png);
+                                
+                                &:nth-of-type(2){background-position: -102px 0;}
+                                &:nth-of-type(3){background-position: -204px 0;}
+                                &:nth-of-type(4){background-position: -306px 0;}
+                                &:nth-of-type(5){background-position: -408px 0;}
+                                &:nth-of-type(6){background-position: -510px 0;}
+                                &:nth-of-type(7){background-position: -612px 0;}
+
+                                &:hover{
+                                    transform: scale(1.1);
+                                }
+
+                                >a{
+                                    display: block;
+                                    height: 145px;
+                                    color: #fff;
+                                    font-size: 16px;
+                                    font-weight: 600;
+                                    text-shadow: 1px 1px 1px #000;
+                                    
+                                    line-height: 250px;
+                                    text-align: center;
+
+                                }
+                            }
+                            
+                           
+                        }
+                    }
+                }
+            }    
+
+        }
+        >.cont2{
+            margin: 100px 0;
+            >.notice{
+                display: flex;
+                width: 1400px;
+                height: 180px;
+                margin: 0 auto;
+                border: 10px solid;
+                border-image: url(./../images/bg_notice.png) 10 round;
+                >h2{
+                    text-indent: -40px;
+                    width: 200px;
+                    >a{position: relative;
+                        display: block;
+                        height: 180px;
+                        font-size: 30px;
+                        line-height: 180px;
+                        text-align: center;
+
+                        &:after{
+                            position: absolute;
+                            left: 150px;
+                            top: 50%;
+                            margin-top: -13px;
+
+                            content: '';
+                            width: 33px;
+                            height: 33px;
+                            background-image: url(./../images/sp_main.png);
+                            background-position: -72px 0;
+                        }
+                    }
+                }
+
+                >table{
+                   
+                    width: 1200px;
+                    font-size: 16px;
+                    
+                    tr{
+                        
+                        width: 600px;
+                        height: 90px;
+                        line-height: 90px;
+                       
+                        >td{
+                            color: #aaa;
+
+                        }
+                    }
+                }
+
+            }
+        }
+        >.cont3{
+            position: relative;
+            width: 1400px;
+            height: 600px;
+            margin: 0 auto;
+            overflow: hidden;
+            >.news{
+                position: relative;
+
+                >h2{
+                    font-weight: 300;
+                    font-size: 30px;
+    
+                    
+    
+                }
+                >.tap-pagination{
+                    display: flex;
+                    justify-content: space-between;
+                    position: absolute;
+                    left: 150px;
+                    top: 10px;
+                    width: 350px;
+                    
+
+                    >li{
+                        width: 72px;
+
+                        &.on,
+                        &:hover{
+                            >a{
+                                text-decoration: underline;
+                                color: #ff683f;
+                            }
+                        }
+                        >a{
+                            display: block;
+                            height: 26px;
+                            text-align: center;
+                            font-weight: 600;
+                            line-height: 26px;
+                            font-size: 16px;
+
+                        }
+                    }
+    
+                }
+                >.tab-plus{
+                    display: block;
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    width: 32px;
+                    height: 32px;
+                    background-image: url(./../images/sp_main.png);
+                    background-position: 0 0;
+                    text-indent: -9999px;
+    
+                }
+                >.box{
+                    position: absolute;
+                    top: 50px;
+                    left: 0px;
+                    display: flex;
+                    margin-top: 50px;
+                    
+
+                    >.box-news{
+                        
+                        
+                        
+                        
+                        >.lst_news{
+                            display: flex;
+                            justify-content: space-between;
+                            width: 1400px;
+                            height: 396px;
+                            
+                            >li{
+                                width: 320px;
+                                background-color: #fff;
+                                >a{
+                                    position: relative;
+                                    display: block;
+                                    height: 396px;
+                                    >.category{
+                                        position: absolute;
+                                        display: block;
+                                        top: 5px;
+                                        left: 10px;
+                                        color: #fff;
+                                        font-weight: 400;
+                                        font-size: 16px;
+                                        width: 43px;
+                                        height: 35px;
+                                        line-height: 35px;
+                                        border-radius: 5px;
+                                        text-align: center;
+                                        
+                                    }
+                                    >.green{
+                                        
+                                        background-color: #1eab3b;
+    
+                                    }
+                                    >.blue{
+                                        background-color: #3f7aff;
+                                    }
+                                    >.red{
+                                        background-color: #ea4861;
+    
+                                    }
+                                    >.puple{
+                                        background-color: #ae4de6;
+    
+                                    }
+                                    >.pic{
+                                        display: block;
+                                        width: 320px;
+                                        height: 220px;
+                                        box-shadow: 2px 2px 2px;
+                                        
+                                        >img{
+                                            display: block;
+                                            width: 100%;
+                                            height: 100%;
+    
+                                        }
+                                    }
+                                    >.tit{
+                                        display: block;
+                                        font-size: 16px;
+                                        font-weight: 600;
+                                        line-height: 1.4;
+                                        margin: 20px 0 0;
+                                        
+                                        overflow: hidden;
+                                        white-space: nowrap;
+                                        text-overflow: ellipsis;
+    
+                                    }
+                                    >.txt{
+                                        display: block;
+                                        margin: 20px 0;
+                                        height: 46px;
+                                        font-size: 16px;
+                                        line-height: 1.4;
+                                        overflow: hidden;
+                                        white-space: nowrap;
+                                        text-overflow: ellipsis;
+                                        
+    
+                                    }
+                                    >.info{
+                                        display: block;
+                                        height: 50px;
+                                        line-height: 50px;
+                                        border: 1px solid #dedede;
+                                        >.media{
+                                            display: inline-block;
+                                            font-size: 16px;
+                                            text-indent: 15px;
+                                            color: #4f63a6;
+    
+                                        }
+                                        >.date{
+                                            display: inline-block;
+                                            font-size: 16px;
+                                            text-indent:120px;
+                                            font-weight: 300;
+                                            
+    
+                                        }
+    
+                                    }
+                                }
+                            }
+                        }
+                    }
+                  
+                }
+            }
+            
+            
+        }
+        >.cont4{
+            width: 1600px;
+            height: 570px;
+            margin: 0 auto;
+            
+            background-image: url(./../images/bg_main02.jpg);
+            background-position: 0px 200px;
+            background-repeat: no-repeat;
+            
+            
+
+            >.bg_main{
+                position: relative;
+                width: 1400px;
+                height: 220px;
+                margin: 0 auto;
+
+                >.megazine{
+                    // display: none;
+                    position: absolute;
+                    top: -50px;
+                    left: 0;
+                    width: 280px;
+                    height: 500px;
+                    >h2{
+                        font-size: 30px;
+                        font-weight: 300;
+                    }
+                    >.frame{                    
+                        width: 280px;
+                        margin-top: 30px;                    
+                        border-radius: 15px;
+                        background-image: url(./../images/megazine.jpg);
+                        
+                        >a{
+                            display: block;
+                            text-indent: -9999px;
+                            height: 370px;
+                        }
+    
+                        
+                    }
+                    >a{
+                        position: relative;
+                        display: inline-block;
+                        font-size: 16px;
+                        font-weight: 700;                        
+                        width: 135px;
+                        height: 50px;
+                        margin-top: 10px;
+                        text-align: center;
+                        line-height: 50px;
+                    }
+                    >.btn1{
+                        &:after{
+                            content: '';
+                            position: absolute;
+                            top: 17px;
+                            right: 10px;
+                            width: 14px;
+                            height: 14px;
+                            background-image: url(./../images/sp_main.png);
+                            background-position: -324px 0;
+
+                        }
+                    }
+                    >.btn2{
+                        &:before{
+                            content: '';
+                            position: absolute;
+                            top: 16px;
+                            left: 5px;
+                            height: 20px;
+                            border-left: 1px solid #bababa;
+
+                        }
+                    }
+    
+                }
+                >.dstory{
+                    // display: none;
+                    position: absolute;
+
+                    left: 340px;
+                    top: -50px;
+                    
+                    >h2{
+                        width: 390px;
+                        height: 35px;
+                        background-image: url(./../images/sp_main.png);
+                        background-position: 0 -225px;
+                        text-indent: -9999px;
+                        &:after{
+                            content: '';
+                            display: block;
+                            position: absolute;
+                            top: 50%;
+                            left: 105px;
+                            right: 0;
+                            border-top: 1px solid #ddd;
+                        }
+
+
+                    }
+                    >a{
+                        position: absolute;
+                        top: 0;
+                        right: -20px;
+                        display: block;
+                        width: 33px;
+                        height: 33px;
+                        background-image: url(./../images/sp_main.png);
+                        background-position: -72px 0;
+                        text-indent: -9999px;
+
+                    }
+                    >.dstory-container{
+                        >li{
+                            display: none;
+                            position: absolute;
+                            top: 65px;
+                            left: 0;
+                            width: 420px;
+                            border-radius: 30px;
+                            
+                            &:nth-of-type(1){background-image: url(./../images/dstory-1.jpg); display: block;}
+                            &:nth-of-type(2){background-image: url(./../images/dstory-2.jpg);}
+                            &:nth-of-type(3){background-image: url(./../images/dstory-3.jpg);}
+                            &:nth-of-type(4){background-image: url(./../images/dstory-4.jpg);}
+                            &:nth-of-type(5){background-image: url(./../images/dstory-5.jpg);}
+                            
+                            >a{
+                                display: block;
+                                height: 370px;
+                                text-indent: -9999px;
+                            }
+                        }
+                    }
+                    >nav{
+                        position: absolute;
+                        display: flex;
+                        left: 120px;
+                        top: 450px;
+                        >.nav-dst{
+                            display: block;
+                            margin: 0 20px 0;
+                            width: 34px;
+                            height: 34px;
+                            background-image: url(./../images/sp_main.png);
+                            text-indent: -9999px;
+                        }
+                        >span{
+                            display: block;
+                            width: 40px;
+                            height: 34px;
+                            font-size: 16px;
+                            line-height: 34px;
+                            text-align: center;
+                            >strong{
+                                font-weight: normal;
+                            }
+
+                        }
+                        >.prev{
+                            background-position: -109px 0;
+
+                        }
+
+                        >.next{
+                            background-position: -147px 0;
+
+                        }
+                    }
+                }
+                >.archives{
+                    
+                    position: absolute;
+                    right: 0;
+                    top: -60px;
+                    width: 560px;
+                    height: 500px;
+                    overflow: hidden;
+                    >h2{
+                        font-size: 30px;
+                        font-weight: 300;
+
+                    }
+                    >a{
+                        position: absolute;
+                        top: 0;right: 0;
+                        display: block;
+                        width: 33px;
+                        height: 33px;
+                        background-image: url(./../images/sp_main.png);
+                        background-position: -72px 0;
+                        text-indent: -9999px;
+
+                    }
+                    >.archives-pagination{
+                        display: flex;
+                        justify-content: space-between;
+                        width: 400px;
+                        height: 25px;
+                        margin: 20px 0;
+                        >li{
+                            width: 61px;
+                            &.on,
+                            &:hover{
+                                border-bottom: 3px solid orange;
+                                box-sizing: border-box;
+                                
+                                >a{
+                                    font-weight: 700;
+                                    color: #000;
+                                    
+                                }
+                            }
+                            >a{
+                                display: block;
+                                font-size: 18px;
+                                color: #dedede;
+                                text-shadow: 1px 1px 1px #000;
+                                text-align: center;
+
+                            }
+                        }
+                    }
+                    >.flex-container{
+                        display: flex;
+                        position: absolute;
+                        left: 0;
+                        top: 100px;
+                        
+                        width: 3360px;
+                        height: 439px;
+
+                        >.archives01{
+                            // display: flex;
+                            width: 560px;
+                            
+
+                            >.archives01-01{
+                                display: flex;
+                                width: 560px;
+                                justify-content: space-between;
+                                >li{
+                                    width: 270px;
+                                    height: 330px;
+                                    >a{
+                                        display: block;
+                                        >.pic{
+                                            >img{
+                                                border-radius: 20px 20px 0 0;
+                                                display: block;
+                                                width: 100%;
+                                                height: 100%;
+                                            }
+    
+                                        }
+                                        >.tit_area{
+                                            position: relative;
+                                            display: block;
+                                            height: 134px;
+                                            background-color: #fff;
+                                            padding-left: 20px;
+                                            border-radius: 0 0 20px 20px;
+                                            background: linear-gradient(to top, rgba(255,255,255,1) 75%, transparent);
+    
+                                            &:after{
+                                                content: '';
+                                                position: absolute;
+                                                left: 220px;
+                                                bottom: 40px;
+                                                width: 22px;
+                                                height: 20px;
+                                                background-image: url(./../images/sp_main.png);
+                                                background-position: -342px 0;
+                                            }
+                                            >.tit{
+                                                display: block;
+                                                height: 50px;
+                                                line-height: 80px;
+                                                font-size: 17px;
+        
+                                            }
+                                            >.date{
+                                                display: block;
+                                                height: 64px;
+                                                line-height: 64px;
+                                                font-size: 14px;
+        
+                                            }
+                                        }
+                                    }
+                                }
+                               
+                            }
+                        }
+                        >.archives03{
+                            width: 560px;
+                            height: 333px;
+                            border: 1px solid #dedede;
+                            border-radius: 20px;
+                            background-color: #fff;
+                            >p{
+                                padding: 0 10px;
+                                height: 50px;
+                                line-height: 50px;
+                                font-size: 16px;
+                                
+                            }
+                        }
+                        >.archives06{
+                            width: 560px;
+                            height: 80px;
+                            border: 1px solid #dedede;
+                            border-radius: 20px;
+
+                        }
+                    }
+                }
+            }
+           
+        }
+        >.cont5{
+            >.banner{
+                position: relative;
+                width: 1400px;
+                height: 100px;
+                margin: 0 auto;
+                overflow: hidden;
+                >.banner-slide{
+                    display: flex;
+                    position: absolute;
+                    left: 0;
+                    justify-content: space-between;
+                    width: 2240px;
+                    >li{
+                        border: 1px solid #dedede;
+                        box-sizing: border-box;
+                        width: 268px;
+                        >a{
+                            display: block;
+                            height: 84px;
+                            >img{
+                                display: block;
+                                width: 100%;
+                                height: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        >.rightbox{
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            background-color: rgba(0, 0, 0, 0.7);
+            z-index: 1000;
+            >.frame{
+                margin: 100px auto;
+                width: 800px;
+                height: 1066px;
+                background-image: url(./../images/rightbox.jpg);
+                text-indent: -9999px;
+                
+
+            }
+            >.close{
+                display: block;
+                position: absolute;
+                bottom: 60px;
+                left: 50%;
+                margin-left: -50px;
+                
+                width: 100px;
+                height: 40px;
+                
+                
+
+            }
+
+        }
+    }
+    >footer{
+        position: relative;
+        margin-top: 30px;
+        // height: 200px;
+        >.footer-tab{
+            height: 62px;
+            background-color: #1e1e1e;
+            >.foicon{
+                display: flex;
+                width: 1400px;
+                margin: 0 auto;
+                
+                >li{
+                    width: 204px;
+                    margin-top: 18px;
+                    // border: 1px solid #fff;
+                    &:last-child{
+                        >a{
+                            width: 100px;
+                            &:before{
+                                display: none;
+                            }
+                        }
+                    }
+                    >a{
+                        position: relative;
+                        display: block;
+                        height: 31px;
+                        color: #fff;
+                        font-size: 18px;
+                        opacity: 0.7;
+                        
+                        
+                        &:before{
+                            content: '';
+                            position: absolute;
+                            right: 30px;
+                            top: 10px;
+                            
+                            width: 4px;
+                            height: 4px;
+                            background-color: #666;
+                            border-radius: 50%;
+                        }
+                        
+                        
+                    }
+                }
+            }
+
+        }
+        >.top{
+            position: absolute;
+            top: -30px;
+            left: 50%;
+            margin-left: 635px;
+            width: 60px;
+            background-image: url(./../images/go_top.png);
+            >a{
+                display: block;
+                height: 60px;
+                text-indent: -9999px;
+            }
+        }
+        >.lastfooter{
+            display: flex;
+            width: 1400px;
+            margin: 50px auto;
+            >h2{
+                width: 169px;
+                height: 43px;
+                margin-right: 40px;
+                background-image: url(./../images/logo_footer.png);
+                text-indent: -9999px;
+            }
+            >p{
+                font-size: 18px;
+                line-height: 1.4;
+            }
+        }
+    }
+}
+
